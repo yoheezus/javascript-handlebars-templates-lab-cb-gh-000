@@ -3,6 +3,10 @@ Handlebars.registerHelper("displayIngredient",
 
     })
 
+function editRecipe() {
+
+}
+
 function createRecipe() {
 
     var template = Handlebars.compile(document.getElementById("recipe-template").innerHTML)
