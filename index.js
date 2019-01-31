@@ -11,6 +11,8 @@ function createRecipe() {
     var formattedRecipe = {
         recipeName: recipeName
     }
+    var result = template(formattedRecipe);
+    document.getElementsByTagName("main")[0].innerHTML += result;
 }
 
 
