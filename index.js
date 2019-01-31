@@ -7,6 +7,8 @@ function editRecipe() {
 
 }
 
+Handlebars.registerPartial("partial-template", document.getElementById("recipe-template").innerHTML)
+
 function createRecipe() {
 
     var template = Handlebars.compile(document.getElementById("recipe-template").innerHTML)
