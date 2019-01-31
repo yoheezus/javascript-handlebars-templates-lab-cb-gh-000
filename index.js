@@ -11,7 +11,6 @@ Handlebars.registerPartial("recipeDetailsPartial", document.getElementById("part
 
 function renderMain() {
     var template = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
-    var recipe = createRecipe();
     var html = template(recipe)
 
     document.getElementsByTagName("main")[0].innerHTML += html;
