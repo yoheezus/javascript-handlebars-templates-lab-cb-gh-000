@@ -15,19 +15,21 @@
             {{> recipeFormPartial}}
         </form>
     </script>
-    <script id="recipe-template" type="text/x-handlebars-template">
-        <article>
-            <h3>{{ recipeName }}</h3><span><a href="#">edit recipe</a></span>
-            {{> recipeDetailsPartial }}
-        </article>
-    </script>
-    <script id="partial-template">
-        <div>{{ description }}</div>
-        <ul>
+    <script id="recipe-form-partial" type="text/x-handlebars-template">
+        Name: <input type="text" id="name" value="{{name}}"> <br>
+        Description = <input type="text" id="descriptiion" value="{{description}}"> <br>
+        <h4>Ingredients</h4>
         {{#each ingredients}}
-            <li>{{ name }}</li>
+        <input type="text" name="ingredients" value="{{this}}"> <br>
+        {{else}}
+        <input type="text" name="ingredients"> <br>
+        <input type="text" name="ingredients"> <br>
+        <input type="text" name="ingredients"> <br>
+        <input type="text" name="ingredients"> <br>
+        <input type="text" name="ingredients"> <br>
+        <input type="text" name="ingredients"> <br>
         {{/each}}
-        </ul>
+        <input type="submit">
     </script>
     <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
     <script src="index.js"></script>
