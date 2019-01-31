@@ -15,7 +15,6 @@ function createRecipe() {
             {quantity: "1 cup", name: "chicken"},
             {quantity: "3 nanoliters", name: "stock"}
         ]
-
     }
 
     var result = template(recipe);
