@@ -15,8 +15,18 @@
             <input type="submit">
         </form>
     </main>
-    <script id="my-template" type="text/x-handlebars-template">
-
+    <script id="recipe-form-template" type="text/x-handlebars-template">
+        <form onsubmit="createRecipe();" id="recipe-form-template">
+            Recipe Name: <input type="text" id="recipe-name"> <br>
+            Recipe description: <input type="text" id="recipe-description"> <br>
+            Ingredient: <input type="text" name="ingredient" id="recipe-ingredient"> <br>
+            <input type="submit">
+        </form>
+    </script>
+    <script id="recipe-template" type="text/x-handlebars-template">
+        <article>
+            <h3>{{recipeName}}</h3><span><a href="#">edit recipe</a></span>
+        </article>
     </script>
     <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
     <script src="index.js"></script>
