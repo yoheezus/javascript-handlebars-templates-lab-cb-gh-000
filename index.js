@@ -1,5 +1,5 @@
 function initForm() {
-
+    var formTemplate = document.getElementById("").innerHTML
 }
 
 function handlebarsSetup() {
