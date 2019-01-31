@@ -17,8 +17,6 @@ function renderMain() {
     document.getElementsByTagName("main")[0].innerHTML += html;
 }
 
-
-
 function createRecipe() {
 
     var template = Handlebars.compile(document.getElementById("recipe-template").innerHTML)
@@ -36,10 +34,6 @@ function createRecipe() {
 
     return recipe
 }
-
-
-
-
 
 function init() {
   //put any page initialization/handlebars initialization here
