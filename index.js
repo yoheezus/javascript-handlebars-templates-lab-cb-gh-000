@@ -9,7 +9,7 @@ function createRecipe() {
     var recipeName = document.getElementById("recipe-name").value;
     var recipeDescription = document.getElementById("recipe-description").value;
 
-    var recipe ={
+    var recipe = {
         description: recipeDescription,
         ingredients: [
             {quantity: "1 cup", name: "chicken"},
