@@ -1,5 +1,5 @@
 function initForm() {
-    var formTemplate = document.getElementById("").innerHTML
+    var formTemplate = document.getElementById("recipe-form-template").innerHTML
 }
 
 function handlebarsSetup() {
