@@ -26,11 +26,7 @@ function createRecipe() {
     var recipeDescription = document.getElementById("recipe-description").value;
 
     var recipe = {
-        description: recipeDescription,
-        ingredients: [
-            {quantity: "1 cup", name: "chicken"},
-            {quantity: "3 nanoliters", name: "stock"}
-        ]
+        description: recipeDescription
     }
 
     return recipe
