@@ -33,7 +33,7 @@ function createRecipe() {
         ]
     }
 
-    var result = renderMain()
+    return recipe
     document.getElementsByTagName("main")[0].innerHTML += result;
 }
 
