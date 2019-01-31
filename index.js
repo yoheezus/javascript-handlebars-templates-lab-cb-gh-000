@@ -18,6 +18,10 @@ function updateRecipe() {
     document.getElementById("main").innerHTML = template(recipe)
 }
 
+function displayEditForm() {
+    console.log("opening edit form")
+}
+
 function handlebarsSetup() {
     Handlebars.registerPartial("recipeFormPartial", document.getElementById("recipe-form-partial").innerHTML)
     Handlebars.registerPartial("recipeDetailsPartial", document.getElementById("recipe-details-partial").innerHTML)
