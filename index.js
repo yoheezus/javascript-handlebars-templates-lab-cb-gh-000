@@ -2,7 +2,7 @@ function createRecipe() {
     var recipeName = document.getElementById("recipe-name").value;
     var recipeDescription = document.getElementById("recipe-description").value;
 
-    console.log(recipeName, recipeDescription)
+    return console.log(recipeName, recipeDescription)
 }
 
 
