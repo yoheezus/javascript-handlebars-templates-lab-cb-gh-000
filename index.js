@@ -13,7 +13,9 @@ function createRecipe() {
 
 function handlebarsSetup() {
     Handlebars.registerPartial("recipeFormPartial", document.getElementById("recipe-form-partial").innerHTML)
+    Handlebars.registerPartial("recipeDetailsPartial", document.getElementById("recipe-details-partial").innerHTML)
 }
+
 function init() {
   //put any page initialization/handlebars initialization here
   handlebarsSetup()
