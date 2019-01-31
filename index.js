@@ -30,7 +30,7 @@ function createRecipe() {
         ]
     }
 
-    var result = template(recipe);
+    var result = renderMain()
     document.getElementsByTagName("main")[0].innerHTML += result;
 }
 
