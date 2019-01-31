@@ -8,8 +8,15 @@
   </head>
   <body>
     <main id="main">
+        <form onsubmit="createRecipe();" id="recipe-form-template">
+            Recipe Name: <input type="text" id="recipe-name"> <br>
+            Recipe description: <input type="text" id="recipe-description"> <br>
+            Ingredient: <input type="text" name="ingredient" id="recipe-ingredient"> <br>
+            <input type="submit">
+        </form>
     </main>
     <script id="my-template" type="text/x-handlebars-template">
+
     </script>
     <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
     <script src="index.js"></script>
