@@ -11,9 +11,10 @@ Handlebars.registerPartial("recipeDetailsPartial", document.getElementById("part
 
 function renderMain() {
     var template = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
-    var html = template({recipeDescription: "Gordon Ramsay"})
+    var recipe = createRecipe();
+    var html = template(recipe)
 
-    return html;
+    document.getElementsByTagName("main")[0].innerHTML += html;
 }
 
 
