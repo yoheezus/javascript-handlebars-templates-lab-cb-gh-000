@@ -34,7 +34,6 @@ function createRecipe() {
     }
 
     return recipe
-    document.getElementsByTagName("main")[0].innerHTML += result;
 }
 
 
