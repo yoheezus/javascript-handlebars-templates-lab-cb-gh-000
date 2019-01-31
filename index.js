@@ -5,12 +5,18 @@ Handlebars.registerHelper("displayIngredient",
 
 function createRecipe() {
 
-    var recipe ={
-        recipeName: recipeName,
-    }
     var template = Handlebars.compile(document.getElementById("recipe-template").innerHTML)
     var recipeName = document.getElementById("recipe-name").value;
     var recipeDescription = document.getElementById("recipe-description").value;
+
+    var recipe ={
+        description: recipeDescription,
+        ingredients: [
+            {quantity: "1 cup", name: "chicken"},
+            {quantity: "3 nanoliters", name: "stock"}
+        ],
+
+    }
 
     var result = template(recipe);
     document.getElementsByTagName("main")[0].innerHTML += result;
